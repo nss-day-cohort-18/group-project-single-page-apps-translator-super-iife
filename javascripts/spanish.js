@@ -11,17 +11,18 @@ var Translator = (function() {
 
 	return {
 
-	  getSpanish: function () {
+	  getSpanish: function(inputValue) {
 
 		console.log('getSpanish wants to run');
 
 		var splitString = inputValue.split(" ");
+		var spanishPhrase = "";
 
-		splitString.forEach(word) {
+		splitString.forEach(function(word) {
 
-		var spanishPhrase += Spanish[word];
+		spanishPhrase += Spanish[word];
 
-		}
+		});
 
 		return spanishPhrase;
 

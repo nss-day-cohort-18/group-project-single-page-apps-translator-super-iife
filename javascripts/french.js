@@ -9,17 +9,18 @@ var Translator = (function(firstTranslator) {
 		christmas: "noel"
 	}
  
-	firstTranslator.getFrench = function () {
+	firstTranslator.getFrench = function() {
 
 		console.log('getFrench wants to run');
 
 		var splitString = inputValue.split(" ");
+		var frenchPhrase = "";
 
-		splitString.forEach(word) {
+		splitString.forEach(function(word) {
 
-		var frenchPhrase += French[word];
+		frenchPress += French[word];
 
-		}
+		});
 
 		return frenchPhrase;
 

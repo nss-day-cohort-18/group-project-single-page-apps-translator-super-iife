@@ -14,12 +14,13 @@ var Translator = (function(firstTranslator) {
 		console.log('getGerman wants to run');
 
 		var splitString = inputValue.split(" ");
+		var germanPhrase = "";
 
-		splitString.forEach(word) {
+		splitString.forEach(function(word) {
 
-		var germanPhrase += German[word];
+		 germanPhrase += German[word];
 
-		}
+		});
 
 		return germanPhrase;
 
