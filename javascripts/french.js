@@ -9,6 +9,11 @@ var Translator = (function(firstTranslator) {
 		christmas: "noel",
 		mischief: "méfait",
 		managed: "accompli",
+		and: "et",
+		happy: "bonne",
+		new: "nouvelle",
+		year: "an",
+
 	}
  
 	firstTranslator.getFrench = function(inputValue) {
@@ -22,7 +27,7 @@ var Translator = (function(firstTranslator) {
 
 		splitString.forEach(function(word) {
 
-		frenchPhrase += `<p> ${French[word]} </p>`;
+		frenchPhrase += `<h1> ${French[word]} </h1>`;
 
 		});
 

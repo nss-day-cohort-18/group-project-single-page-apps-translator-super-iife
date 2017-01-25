@@ -9,6 +9,11 @@ var Translator = (function() {
 		christmas: "navidad",
 		mischief: "mischief",
 		managed: "manejado",
+		and: "y",
+		happy: "feliz",
+		new: "nuevo",
+		year: "año",
+
 	}
 
 	return {
@@ -24,7 +29,7 @@ var Translator = (function() {
 
 		splitString.forEach(function(word) {
 
-		spanishPhrase += `<p> ${Spanish[word]} </p>`;
+		spanishPhrase += `<h1> ${Spanish[word]} </h1>`;
 
 		});
 
