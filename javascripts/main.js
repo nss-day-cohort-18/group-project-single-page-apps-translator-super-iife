@@ -1,7 +1,7 @@
 'use strict';
 console.log('ready');
 
-var input = document.getElementById("input");
+var input = document.getElementById("transcript");
 var select = document.getElementById("select");
 var button = document.getElementById("button"); 
 var output = document.getElementById("output");
@@ -15,7 +15,7 @@ button.addEventListener("click", whichLanguage);
 function whichLanguage (e) {
 	console.log('whichLanguage wants to run');
 	var inputValue = "";
-	inputValue = input.value;
+	inputValue = input.value.toLowerCase();
 	console.log('input value:', inputValue);
 	var selectValue = "";
 	selectValue = select.value;
