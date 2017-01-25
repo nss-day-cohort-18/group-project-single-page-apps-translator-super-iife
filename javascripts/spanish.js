@@ -6,7 +6,9 @@ var Translator = (function() {
 
 	var Spanish = {
 		merry: "feliz",
-		christmas: "navidad"
+		christmas: "navidad",
+		mischief: "mischief",
+		managed: "manejado",
 	}
 
 	return {
