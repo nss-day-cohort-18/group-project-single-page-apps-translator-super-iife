@@ -12,7 +12,13 @@
     <h1>iife giphy art</h1>
   </header>
    <div class="container">
-    <input type="text" id="input" name="">
+      <form id="labnol" method="get" action="https://www.google.com/search">
+        <div class="speech">
+          <input type="text" name="q" id="transcript" placeholder="Speak" />
+          <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+        </div>
+      </form>
+    <!--<input type="text" id="input" name="">-->
     <select id="select">
 
       <option>French</option>
@@ -24,9 +30,45 @@
     <div id="output"></div>
 
   </div>
+
+    <style>
+      .speech {border: 1px solid #DDD; width: 300px; padding: 0; margin: 0}
+      .speech input {border: 0; width: 240px; display: inline-block; height: 30px;}
+      .speech img {float: right; width: 40px }
+    </style>
+
+
     <script src="javascripts/spanish.js"></script>
     <script src="javascripts/french.js"></script>
     <script src="javascripts/german.js"></script>
     <script src="javascripts/main.js"></script>
+
+    <script>
+      function startDictation() {
+
+        if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+
+          recognition.lang = "en-US";
+          recognition.start();
+
+          recognition.onresult = function(e) {
+            document.getElementById('transcript').value
+                                     = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('labnol');
+          };
+
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+
+        }
+      }
+    </script>
   </body>
 </html>
