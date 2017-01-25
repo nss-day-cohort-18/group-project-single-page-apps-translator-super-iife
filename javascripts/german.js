@@ -7,10 +7,12 @@ var Translator = (function(firstTranslator) {
 	var German = {
 		merry: "Frohe",
 		christmas: "Weihnachten",
+		mischief: "unfug",
+		managed: "verwaltet",
 		and: "und",
 		happy: "Frohes",
 		new: "neues",
-		year: "jahr"
+		year: "jahr",
 	}
  
 	firstTranslator.getGerman = function(inputValue) {

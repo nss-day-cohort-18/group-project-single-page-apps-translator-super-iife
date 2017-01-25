@@ -7,10 +7,13 @@ var Translator = (function(firstTranslator) {
 	var French = {
 		merry: "joyeux",
 		christmas: "noel",
+		mischief: "méfait",
+		managed: "accompli",
 		and: "et",
 		happy: "bonne",
 		new: "nouvelle",
-		year: "an"
+		year: "an",
+
 	}
  
 	firstTranslator.getFrench = function(inputValue) {

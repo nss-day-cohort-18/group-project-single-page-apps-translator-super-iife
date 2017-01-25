@@ -7,10 +7,13 @@ var Translator = (function() {
 	var Spanish = {
 		merry: "feliz",
 		christmas: "navidad",
+		mischief: "mischief",
+		managed: "manejado",
 		and: "y",
 		happy: "feliz",
 		new: "nuevo",
-		year: "año"
+		year: "año",
+
 	}
 
 	return {
