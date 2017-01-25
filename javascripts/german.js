@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('bonjour');
+console.log('halo');
 
 var Translator = (function(firstTranslator) {
 
@@ -9,19 +9,22 @@ var Translator = (function(firstTranslator) {
 		christmas: "Weihnachten"
 	}
  
-	firstTranslator.getGerman = function () {
+	firstTranslator.getGerman = function(inputValue) {
 
 		console.log('getGerman wants to run');
 
-		var splitString = inputValue.split(" ");
+		var splitString = "";
 		var germanPhrase = "";
 
+		splitString = inputValue.split(" ");
+		
 		splitString.forEach(function(word) {
 
-		 germanPhrase += German[word];
+		 germanPhrase += `<p> ${German[word]} </p>`;
 
 		});
 
+		print(germanPhrase);
 		return germanPhrase;
 
 	}

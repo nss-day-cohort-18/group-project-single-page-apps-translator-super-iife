@@ -30,23 +30,21 @@ function whichLanguage (e) {
 		case "French":
 		Translator.getFrench(inputValue);
 		break;
+
+		case "German":
+		Translator.getGerman(inputValue);
+		break;
+
+		default:
+		alert("please select a language.");
 	}
 }
 
-//		case "German":
-//		Translator.getGerman(inputValue);
-//		break;
-//
-//		default:
-//		alert("please select a language.");
-//	}
-//}
-//
-//	function print(variable) {
-//
-//		output.innerHTML = spanishPhrase;
-//	}
-//
+	function print(phrase) {
+
+		output.innerHTML = phrase;
+	}
+
 //
 
 

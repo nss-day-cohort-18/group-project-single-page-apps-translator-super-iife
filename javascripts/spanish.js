@@ -15,18 +15,24 @@ var Translator = (function() {
 
 		console.log('getSpanish wants to run');
 
-		var splitString = inputValue.split(" ");
+		var splitString = "";
 		var spanishPhrase = "";
+
+		splitString = inputValue.split(" ");
 
 		splitString.forEach(function(word) {
 
-		spanishPhrase += Spanish[word];
+		spanishPhrase += `<p> ${Spanish[word]} </p>`;
 
 		});
+
+		console.log('spanishPhrase:', spanishPhrase);
+		print(spanishPhrase);
 
 		return spanishPhrase;
 
 		}
+
 
 	}
 
