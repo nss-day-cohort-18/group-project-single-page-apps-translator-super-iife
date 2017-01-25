@@ -6,7 +6,11 @@ var Translator = (function(firstTranslator) {
 
 	var German = {
 		merry: "Frohe",
-		christmas: "Weihnachten"
+		christmas: "Weihnachten",
+		and: "und",
+		happy: "Frohes",
+		new: "neues",
+		year: "jahr"
 	}
  
 	firstTranslator.getGerman = function(inputValue) {
@@ -20,7 +24,7 @@ var Translator = (function(firstTranslator) {
 		
 		splitString.forEach(function(word) {
 
-		 germanPhrase += `<p> ${German[word]} </p>`;
+		 germanPhrase += `<h1> ${German[word]} </h1>`;
 
 		});
 
